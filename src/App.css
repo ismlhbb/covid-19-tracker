@@ -35,8 +35,6 @@ body {
 .app__stats {
   display: flex;
   justify-content: space-between;
-  height: 9em;
-  width: 50rem;
 }
 
 .app__right {
@@ -86,5 +84,9 @@ body {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+  
+  .infoBox__cases {
+    font-size: 1rem;
   }
 }
