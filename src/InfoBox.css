@@ -1,34 +1,48 @@
 .infoBox {
     flex: 1;
     cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.infoBox:hover {
+  cursor: pointer;
+  transform: translate3d(0, -5px, 0);
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, .3);
+  background-color: #f5f8fa;
+}
+
+.infoBox__title {
+  color: #695d5c !important; 
+  font-weight: 700 !important;
 }
 
 .infoBox:not(:last-child) {
     margin-right: 15px;
   }
   
-  .infoBox--selected {
-    border-top: 10px solid greenyellow;
-  }
-  
-  .infoBox--red {
-    border-color: salmon;
-  }
-  
-  .infoBox__cases--green {
-    color: rgb(70, 223, 70) !important;
-  }
-  
-  .infoBox__cases {
-    color: salmon;
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .infoBox__total {
-    color: #6c757d;
-    font-weight: 700 !important;
-    font-size: 0.8rem !important;
-    margin-top: 15px !important;
-  }
+.infoBox--selected {
+  border-top: 10px solid greenyellow;
+}
+
+.infoBox--red {
+  border-color: salmon;
+}
+
+.infoBox__cases--green {
+  color: rgb(70, 223, 70) !important;
+}
+
+.infoBox__cases {
+  color: salmon;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+}

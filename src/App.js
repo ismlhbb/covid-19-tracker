@@ -72,7 +72,7 @@ function App() {
         {/* Header */}
         {/* Title + Select input dropdown field */}
         <div className="app__header">
-          <h1>COVID-19 Tracker</h1>
+          <h1>COVID-19 TRACKER</h1>
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
@@ -94,7 +94,7 @@ function App() {
             isRed
             active={casesType === "cases"}
             onClick={(e) => setCasesType("cases")}
-            title="COVID-19 Cases"
+            title="Active Cases"
             cases={prettyPrintStat(countryInfo.todayCases)}
             total={prettyPrintStat(countryInfo.cases)}
           />
@@ -126,9 +126,9 @@ function App() {
 
       <Card className="app__right">
         <CardContent>
-          <h3 className="app__rightTableTitle">Live cases by country</h3>
+          <h3 className="app__rightTableTitle">Live Cases by Country</h3>
           <Table countries={tableData} />
-          <h3 className="app__rightGraphTitle">New daily {casesType} worldwide</h3>
+          <h3 className="app__rightGraphTitle">Daily {casesType}</h3>
           <LineGraph className="app__graph" casesType={casesType} />
         </CardContent>
       </Card>
